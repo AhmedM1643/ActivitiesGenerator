@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    font-family: Lato;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.activity-title {
+    font-size: 24px;
+}
+
+.activity-category {
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.another-activity {
+    margin-top: 20px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition-duration: 0.2s;
+    border-style: solid;
+    border-color: white;
+}
+
+.another-activity:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .activity-title {
+        padding: 0px 50px;
+    }
+}
